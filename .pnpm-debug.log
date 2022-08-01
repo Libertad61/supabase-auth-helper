@@ -1,0 +1,769 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@example/sveltekit-email-password",
+      "version": "0.0.0",
+      "private": true,
+      "scripts": {
+        "dev": "vite dev --port 3002",
+        "build:example": "vite build",
+        "package": "svelte-kit package",
+        "preview": "vite preview",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+        "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+        "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
+        "clean:all": "rimraf .svelte-kit node_modules"
+      },
+      "devDependencies": {
+        "@sveltejs/adapter-auto": "next",
+        "@sveltejs/kit": "1.0.0-next.377",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-svelte3": "^3.2.1",
+        "prettier": "^2.5.1",
+        "prettier-plugin-svelte": "^2.5.0",
+        "rimraf": "^3.0.2",
+        "svelte": "^3.44.0",
+        "svelte-check": "^2.2.6",
+        "svelte-preprocess": "^4.10.1",
+        "vite": "^3.0.0"
+      },
+      "type": "module",
+      "dependencies": {
+        "@supabase/auth-helpers-svelte": "0.4.5",
+        "@supabase/auth-helpers-sveltekit": "next",
+        "@supabase/supabase-js": "^1.35.3",
+        "jose": "^4.8.1"
+      }
+    },
+    "prefix": "/home/jm61/DEV/SvelteKit/sveltekit-email-password"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/jm61/.local/share/pnpm/store/v3",
+    "virtualStoreDir": "/home/jm61/DEV/SvelteKit/sveltekit-email-password/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.377",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@sveltejs/kit",
+      "rawSpec": "1.0.0-next.377"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/kit/1.0.0-next.377",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@supabase/auth-helpers-svelte/0.4.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@supabase/auth-helpers-svelte",
+      "rawSpec": "0.4.5"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@supabase/auth-helpers-svelte/0.4.5",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-svelte3/3.4.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-svelte3",
+      "rawSpec": "^3.2.1"
+    }
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-svelte3/3.4.1",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/rimraf/3.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "rimraf",
+      "rawSpec": "^3.0.2"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rimraf/3.0.2",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "12 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/rimraf/3.0.2",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "found_in_store"
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-svelte3/3.4.1",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "found_in_store"
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-prettier/8.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-prettier",
+      "rawSpec": "^8.3.0"
+    }
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.5.0",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier-plugin-svelte/2.7.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier-plugin-svelte",
+      "rawSpec": "^2.5.0"
+    }
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-plugin-svelte/2.7.0",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "18 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.5.0",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "found_in_store"
+  },
+  "19 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier-plugin-svelte/2.7.0",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "found_in_store"
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/jose/4.8.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "jose",
+      "rawSpec": "^4.8.1"
+    }
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jose/4.8.3",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier/2.7.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "^2.5.1"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.7.1",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "24 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/jose/4.8.3",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "found_in_store"
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.7.1",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "found_in_store"
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-check/2.8.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-check",
+      "rawSpec": "^2.2.6"
+    }
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-check/2.8.0",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@supabase/supabase-js/1.35.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@supabase/supabase-js",
+      "rawSpec": "^1.35.3"
+    }
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@supabase/supabase-js/1.35.4",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "30 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte-preprocess/4.10.7",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte-preprocess",
+      "rawSpec": "^4.10.1"
+    }
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.10.7",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "32 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint/7.32.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint",
+      "rawSpec": "^7.32.0"
+    }
+  },
+  "33 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/7.32.0",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-check/2.8.0",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "found_in_store"
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte-preprocess/4.10.7",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "found_in_store"
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@supabase/supabase-js/1.35.4",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "found_in_store"
+  },
+  "37 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@sveltejs/adapter-auto/1.0.0-next.64",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@sveltejs/adapter-auto",
+      "rawSpec": "next"
+    }
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@sveltejs/adapter-auto/1.0.0-next.64",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "39 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/svelte/3.49.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "svelte",
+      "rawSpec": "^3.44.0"
+    }
+  },
+  "40 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/svelte/3.49.0",
+    "requester": "/home/jm61/DEV/SvelteKit/sveltekit-email-password",
+    "status": "resolved"
+  },
+  "41 error pnpm": {
+    "code": "ERR_PNPM_NO_MATCHING_VERSION",
+    "packageMeta": {
+      "name": "@supabase/auth-helpers-sveltekit",
+      "dist-tags": {
+        "latest": "0.6.8"
+      },
+      "versions": {
+        "0.0.0": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.0.0",
+          "dependencies": {
+            "@supabase/supabase-js": "^1.35.3",
+            "jose": "^4.8.1"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "copyfiles": "^2.4.1",
+            "rimraf": "^3.0.2",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-70HCaY+Gbt8vPfd0fjdapxr3yYdpBo5QACWISFRTu7ddsfz03xPk5MCQkPI5zjWpjrB7my/lfk4FLeNEjvegpA==",
+            "shasum": "3ec5f1234adbb82c3cb3ba4a48fa7000535c878c",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.0.0.tgz",
+            "fileCount": 38,
+            "unpackedSize": 31795,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIQC/L3ru5Ato79mP4UQIsQKbzvljd63VGFDHqKD6xHSN4wIgDtVfewBRIpreF0p/HE7HQPGLJB2OjfIi4wK6rJ6Rl6k="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJilreSACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoFYA//b70JEr/HGn9gpaoC1AMISUIZ2dQFRL/f22F3kzHI88yb+Y/0\r\nVATmp4ms0YN5CvK+ksdAnWYedztvY5Z/mFCs9g1/AX+2uQ5GHASOoQqb5K0o\r\nXxPbUegac2P1jn5hDkkFzC0c230EUPEtVa+gOHPmPwiImtb2pVJ7yQSSZ8Bh\r\n4FNUKKsKf2vn1LHgDujYjKuXLyNhTHwozj9QUkcMmbBPlt8eX4CLBSn1sdcL\r\nTtJVSXGCAVViMNPcW/OPaSO9uwnuiLFHumGANAn3guxBxd/mSHOpvXRj83v/\r\nLwb+XZny3t1Ha/tvl4V2FWBX/bDItD5T73nobehSvImdqgxnimGMmSTlt45F\r\nwG7zH9ABExcRYL4M2awgym3BHQdbJeYCqQlCTtCyzW2FQSS4KMxFCDOHPfcZ\r\nsbeb01vuUvVApBeuNegN67YzNjcuFN9/94L6FjNf6Nyr9esGfb6Nm3pI6ka8\r\nq/YnQbuFkua6VnUw076pTzLbvl6sLk3jX4j7H7iAB8JxOJfyZ/4elk9qrfQT\r\n/9SPkMpKR1h20cLD9WRRWFu4XRo+ROfbhk/uLHAavbn4aLUDtLPF/ZqTW+mB\r\nQwyqvrOwLZ56HCTZ7wqy0/IlWIWOV2+knHTcTYcYkyNudtxCizeDitTlgDu7\r\n1Ep2fuAc1fypr4HEM5jpn/Bs4AzHFJVvSsg=\r\n=Fpm8\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.1.0": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.1.0",
+          "dependencies": {
+            "@supabase/supabase-js": "^1.35.3",
+            "jose": "^4.8.1"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "copyfiles": "^2.4.1",
+            "rimraf": "^3.0.2",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-aDk7NadigmgoKJA9CrG7P3iTdjr03/0mGBXL2SiE6jN3ipbJb6KjpFNghvtG/KSxScD3G8lZH0zQ5VRdhxmnAA==",
+            "shasum": "556acb6f95fa61365bbbc8c631663abfe16495ba",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.1.0.tgz",
+            "fileCount": 39,
+            "unpackedSize": 31909,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEYCIQDTieXZtz5ieicGBXR8LYYWnBVdckVrZTVOKCGM1m8c5gIhAKul0Xu+PFDxeNfoPSwz5rZkSQ2vnESEwLZnNr8nq3sL"
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJilzJ+ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpG7g/8DCvVchh8/AiYJCukdB7GULpXZJjV6MLCgW1rUwW8iZpyd5eH\r\nMg34Ozm8ExW5qg19iRHV55f5rqsEvhRTTF1VD5ZGpD2p65/j1rgy2Mq8cTG3\r\nhiKF6vpuR8lShVapQwiXvmyFRZzmcV/XGesW0/XO6SF9dIiCMyryDH+oissw\r\nBFcvKWJC9MkGIYnwN4CnaganE/eF25sA8bpLhFZsE7yVq/51/gb7pxcmI2DS\r\nEbsHDcf/Fb1qT4kvmnJ/CwFvXvCm9uRBZiz/C/ibS5rdEyFAvoyGtI2szTB+\r\nZzVXvSdd+zfpGA6H+j7pCr/YAW6IsUnAb9B1Xdjfvbqqc/15tY2rjchDI5Xz\r\n4+XFCOBi13E5siDGDcalrVlHZII7+SddzfL8ViaAxZ7bR2cUMHnlQ5Jhm2pP\r\nGlKA8NbeXYLNjsnRsUVrPevYpoTD4RPCbIdL36jtJfhZFPeVKe9Jpf3w/jtB\r\ne4SGQAYjVqnjDpWVoIVaUTxT9CEP27gV93h12o273cxM/bynWdrz/8a7VRiC\r\n1e6CILSR4Hc/YjUUATjQPGEo3NswoMJiX4TNd9WtpxQZXsF6ly1LGEBZaE03\r\nzI4pqba86YxeOIwcHC4UYV8YgY18aT+XxCW6mRd28NXvpavAw1WeXqiW3Pub\r\nK3CxAlBWORkPrJnT/2Jeo2RLzrm8moqaM9o=\r\n=Snro\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.2.0": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.2.0",
+          "dependencies": {
+            "@supabase/supabase-js": "^1.35.3",
+            "del-cli": "^4.0.1",
+            "jose": "^4.8.1"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "copyfiles": "^2.4.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-2xx0tXp+fE0/lq23dqEXZ/qBGaJHSwB67VfH4xDS8CG/0mosL5M6BNZ4+gzuuF51TylSkNOCWdAvynIchi0ajA==",
+            "shasum": "6f04ecc0ae0ec5d1928a3c441877bbd84cdb7593",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.2.0.tgz",
+            "fileCount": 39,
+            "unpackedSize": 31998,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEYCIQCIoiMMMRFn6gacQBs5KJC5N51A4mgezDUSdxzoNpPEMwIhAKOLDIesBsbTHInopN/okif7XMKUMqe6YyJXXXfEpRSv"
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJilz1HACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmr34Q/+P73c4vf//d7KFUaarbf8xtHj9YBOruKC5wfRw9+9jgxlmLBy\r\nslENxkaO0KrQwUxDSmB81kDHgcdjDGmEfipNYg+glPcCVJO/I59k0mg70S0G\r\n+E+a4pGra9h0zIKTZKuWLvU6mzdAE1Hie8cPJvvdG80/TqHLHDmNBixDPR5a\r\nKD0WP0d8uVu2l8G5JV/uetw1Bpj9s9R57i72qVSa47XQ9m53yifa6LUY98mY\r\nXSohwoLbL+CG27B/LspdL96+sjo5GjySIo33zPggWJNgWoO769hnC4Yf6l/w\r\nAAUhlPHH2qtqfDcuRze9bSugyM09bUZO91Pld43xAx5ViCa5XIZ6kPjFQ+Ja\r\nFtJOZkCzR4/S23VThzr2GhNaqBv6PD+OPxxORt+dwBoMGvV5ist0UoNnd6Ii\r\nhpOcl2pCAOXELr1aJQfomoMEIuhCorU8U2PoWdB7chkib6KSxoF0BH85Bs4O\r\nAvZRFZgwLhr4i3CU343bMSUlC3eU6otGY/whe/DPsVHwJ2XqvmBCSS+lA+YP\r\nGNU4K5ANcYcTEoHm3jeaji7Rj4DQr86NopZ0uCDikpVbbu8XDRTYLMQW1Jea\r\nQmYxdiIf1zWH7WwUcVKusD61mVwUv40MsDZ6+2TWzsqO0ViOTjo09xfM6qrQ\r\n4LivMK5XW3PNoAM0lwaFlx+xRbebkiZNY9c=\r\n=weaB\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.3.0": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.3.0",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.0",
+            "@supabase/supabase-js": "^1.35.3"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "del-cli": "^4.0.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-ekodJ6vRC9svVsAqk+dwqzP/x6Bml8ms4KQfeiWvS1r5DQ0ri6nOCNrEylc6xZZnPFQILreAsmlv4GBblcZ6zQ==",
+            "shasum": "52b3a851116aac9b735efaf0eca9e0117e0e3ccd",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.3.0.tgz",
+            "fileCount": 34,
+            "unpackedSize": 32444,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIQCXIT2jkBPuRPjOPuHcnkjT4OwDtNnCa8UAj3zu1Ri+MQIgLkGRc2eDjz6s1Ejw+717quziA0bJ9HQsBStImuORQsM="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJimJqMACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqTyxAAjDQPszeLXLU3sBHWj0uEoOj1f8wd1WG7rQbk0BlZDg/LHIGA\r\nxZnHqZgCjNBXVRxuPqUdP85rNCRhkvHHII5q/ROHvXFDkANg3+o5Dp5WG+JD\r\nXgIc2V6PJsKvWQ4Hx0apU/k36ysd0fpVqYDUPu1fiiT2sv18waf42urwvAdK\r\n8Xl5S5XqvFQAEK+0SHz4QXKpplyk98w268dtTrpbHTgseHlhFWN7mvLbZMX9\r\nKCnuk7c7J0WJ9NLzzdakMZV2e/mSyw9kEGtEPYqBAuf8M7ZDCY3pImDGQnmJ\r\nynngAq8X8ouUGZvlb1Fjl72PRQx1+Vj9mbfTkniP4un2nsYEi1VuApikA2Dl\r\nWCd+2oiQfq/jR1xrKIWZps9kX5NdwZQlwjUd1wiDxx9IB6Qxr+n2yLqXUCtZ\r\nY/0q/dvnl3UwcYSdJMzJf69UDu46tQeKV/ooVal8HaFZFNt6L/WzkYRJrj6u\r\ngo3x/NGsiCewDbwyEICpFTUDxwqHVbCg3asMlxRnajGPQc2Nvfy0fPx0SYXD\r\nmSIGXWAO5V9iv8Qd8aWsMRxOkyM9shYwguuyAzC4q83f2nmUrrVxNFDDmcAg\r\np/FWXVhQISEd3WdTTI++WdMnlLBKkDb/arhs7QY3qmGpQ/dDXvMXItR5P1c5\r\nYoAChTnPn0vi1+zw1TDn5yh1ynariGpJJXM=\r\n=s+p5\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.4.0": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.4.0",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.0",
+            "@supabase/supabase-js": "^1.35.3"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "del-cli": "^4.0.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-0NYPyf10jQNYzcmestfIAERrsQlC2rrg56CSznVI8Ylp5jeHh1EzoUE5uXKGLdkI+KrfT62TsnpHUuA3jUDO7w==",
+            "shasum": "1f94eb4f9924ab897be5f8e9031856084b14c093",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.4.0.tgz",
+            "fileCount": 34,
+            "unpackedSize": 32599,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEQCIE35zaU/LgT8x4iTj38RtO9XAJOEH6Vz4iJpVKo4H0+oAiANl8Av8ll0+YE9gOpDrsZkWeDifdrqlKYnmpyGTt/SQg=="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJimS4DACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmoezw//V8Is9uaP7AdhXkjsx5ggk3LStM66I40SXh+mhSKMrBfwYFq1\r\nhy2Ig2J9vN47DiiuZ8iaX1rAVA4wzHJzu0UQINfgINCERmtWfr5GwBaxt+rd\r\nMzKzTf4A5UGprpaFzZu96DiQpB4obyKaG9PsVrVyqZNATXXaflPLHGMAoou2\r\ne3CCHv3KU11SRqRTMGVsji7kaSrt7pS4V9VekimgY/AC4BwrjCkUjbKIyVUh\r\n7/mB4AQCnbZ+uvPXt0oJWVOjtL3PCFk5OmhRTSx1Bp+EJgOQGDdnZU8ylEj0\r\n4y/hkoZgO5m3ug1VH3Ma+VEqwvQCfIn3ntfuuAwAogFsf21brPvVHr2yS2NF\r\n5syzuv6Ke6oQebmyk1LN7jEwvairnmHXCrBklAxtwBtFKZhZtczKm07urbVa\r\nL+ZUxiLXq0QHvZiVqDs/qRqBgI8JpXHmzmktG7egBxuozsM+f3GdZAq1WxsC\r\nu3olSdcAHAN0aZDaGS2yRmk0gwDTC0RpiWfptmVORd3HMgiZXsDuYaiyWzrX\r\nhm9iuO4npt5daZsm+UemzrSkcN1vD0Hhr0sc8aeLd3gY9WhjiHcgcwTn0kel\r\nmF2EL/O3ZtIkkLQlPXoiTgO4zC0TcDxHSaElZvUM97BFDMi8Ss7RMmqk/1bq\r\nJ1IL41IukFZqly2DXlWdUApkuQgFZKdjUXY=\r\n=m+5+\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.5.0": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.5.0",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.0",
+            "@supabase/supabase-js": "^1.35.3"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "del-cli": "^4.0.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-aXzsgNCtAlFZdlHplut3J5Wr787UQSRmjTFJWy8pQvQHfoiHYigqpgE55Heg6YepONp0jgEZDfMHiKVx7wH/bA==",
+            "shasum": "782a6ccf57cb39fee51731b0419359345f04a0aa",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.5.0.tgz",
+            "fileCount": 42,
+            "unpackedSize": 36981,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIGCRRUMmv5dWTkGDbgvu/POTYOUaCga8H+mVTWvLDpKwAiEAkDkNJ3ATXM0uv0aNNnzvsPoFCAZfYxdrB+syYIawDyQ="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJimTwjACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmoasw//YPi5kybajHvcCSeOq/2BjwVQNuS2s2CcuVwdB4xQD74++3hx\r\nCZPuvR5LT0DLNDM+tY4fh1jzuuHMHF/osIIIZDCJ7In/iL5nTEsMPgsihSzG\r\nFEh/829uD3w6IlF6Q9wlVqVKBz/7x+Hp968wJT20hPNaQE9n9y10sD+cj41l\r\ntXUoPgmiq/QL+787yC1m42C5XI7X4SinGJU3zkBlJQmk82QBpPWmb6AW61Ic\r\nKncaMKR2MssobjmQGuEAUzc6V/Gpgwrq3JYBhjjKvPO8OJMISWlxdSLrtyWI\r\nzAzZDVKDjnrXZVA8hyDz4nlQkrKL2ma77uuQMPLyKjkoRWFjCNTR3fwaeZK4\r\n+SbIv/cth8akZmhOsWyN7FAo47tbFWqeYZBLMMaDAATqfoGQ6MqNu+NE5d24\r\n1NWlU3Jev9WVrXfqW2CLD6oOD5/QcYRY7GcF0KlGLscdEBNTaDqv0sCbe1xQ\r\nIUbT90XJqEgbjHqoc3gI2KmrtFm4Y0SOXQTIYhwmCcbeVkBEDJOhtyGSHVjn\r\ntOFITCVdwzM8oZr5utXNn1jSgJ2BIO/RjIpWbInDU5N2nGO06Cm5NxmXqZPs\r\n4uf6DMK5ESDVkSsl0zFGZJlf4kdinHVnVk25yEUlVsG/4g0z4M43wUCVK90K\r\nGbnCiZ+JH/YLKAawah5tT3WPyWApT+mGzNU=\r\n=etWF\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.6.0": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.6.0",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.0",
+            "@supabase/supabase-js": "^1.35.3"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "del-cli": "^4.0.1",
+            "fix-esm-import-path": "^1.2.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-IprcAHAnUuR0oI2HknCMHVvDT/XrFykgeNXIAPO2Ygxt/zbOGXRyzroaNSpAXKeSy40QMizGlkQ81pdKrgPBYg==",
+            "shasum": "0639fb624af61e358d4dff729b9f4be44a98a075",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.6.0.tgz",
+            "fileCount": 30,
+            "unpackedSize": 32579,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEYCIQDotpMf+xzcaMQim6maGdNupHuUE0xb0q0DSdENsdf4LwIhAMfr8GtqnW6rfE+K1CoPrptTEFec5SCEwiYSQueCMuQU"
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJimURQACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmqv4w/+PBdl7XDuoYLY1jq0m3XUrMXq+c3+8gaUIpiE0hx8Zb4NRuHs\r\nW7u8ySrGH1NrMOKLkjUh8nOJoB+4oLnklm4J2/iEdZlBEFFvKDaPulacmQ0H\r\nai9nVfs+9dRNCJe6HzCr9MjCP0PmrJOfIVDZ1YXM6XKhizi/zy7y6kvg6vA1\r\nFVRIecw00HSTQpJ3Wfq4l3cqcTtMVt3KcUGsNxeUUfXr4vkfVIvOc13nzcAh\r\nhcOHq012DWmKnnW/wiejNmI97CB9637qgInmJkzNgvF20Fu+vIRXuAhwbsiS\r\nQkHfJ3ZUirXYeUhbIbM05rpmsB7f2pSRUE4q6agjCriMXEHoDXB0CDyhWmSc\r\nTQKJ7EFLzdUy8nd1R3LH4zfa+EBr46Sz3pwk2q41yCxBmEwIzvHYkh2dsLH8\r\n2DiVArkhpBIE+RQO07WkbOc7xVyFc6QhXt4gz+rJ2QIOa7pFicEqSeXiL4zJ\r\nq45E5eQJI59cVlWYlVzfbE49tyfrlw8z1wcTtJQpjgEdP+cPgUC0zdJpIVCl\r\nSm5UvtHiRdGGXVvJ2GBLz4ORTm+ZUwXgquIcTRJbbY+hqZqgIRAzOi5vMHR9\r\nGhmM7t1ZvnPjPYf09Hyjzjk37K5LIh9JJqWEbUaSuXcv1+T1rv5PbP6XwC/H\r\nRx9+io0794FK9VC7ths7YRC/PxstrTV/lB0=\r\n=489T\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.6.1": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.6.1",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.0",
+            "@supabase/supabase-js": "^1.35.3"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "del-cli": "^4.0.1",
+            "fix-esm-import-path": "^1.2.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-cFG4fFMYHjQpBbAEP19MbM8q1fAVIJj04F5y1htMyJuwF50MAjAT0Sfyjk2LHAzgkobhUPbzhBf/gaDlv4stvQ==",
+            "shasum": "06dd53a172dc365220f41b120226babc2de92627",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.6.1.tgz",
+            "fileCount": 30,
+            "unpackedSize": 32387,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEYCIQCHIEuh1XSuFXK9lubjksUgFqSs+NzHvL7xrRpFKLATPgIhANRDK2HhF9ogqQSS5Xh8PogLFpdlM1XL2c4lGdrmeUU1"
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJioy7kACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrBmw/+LlFNP3nEWL/vN6UujFFKiNoqTcT22HRnPMFXGIK5hfUc8kYN\r\n52Hq938z4jV7ZxN0Qh54ATmiVaBESqnby8qI5Qp5QLKFUjEwtEa0eDAgLvpX\r\nV7XRpOx3navp9W0kpu4BCf+K9VbejfEt5GAEkIZczVguln5AH79/Tq/Kw84T\r\nFYvr/3ZZKFlmjj6x2JWu7Pv2TJsH2hiI4VayhAeSt0TzrQjfKhJxdhdos89y\r\nLX/o4A81GnyJr9McbYvg+2DYSce+078FZEBFRP3gC+j2yGyr3iVn+T/Dhgkb\r\nK64Wj7s928sh7tNZukI4jbD340VcPVnHj2w5+YXe0ZUhgcvUAcFmrB3ZEP6G\r\nFZK/InzomHajZpPCde8FEpBsu9PTzb0DdW34DMBvyIn2oQ6cMTSK7rGRZZWo\r\n/VcuL/nS7iXNlrAaTP0GH9u1VfZx0fyBlxPgnUJSgRzwWjrd6oWaocTfgGK7\r\n5pQkGRK3hyvEKSXSVghMUgpyNDTAGmIhbIhV+EEKiaZcsgoDYzdVqgju+xdH\r\nCuZzWYorOLWbb9wps7wFFapMu7Zc3TdTQrKRK0M8NFe7dC85zIbM9IuPQl5r\r\nZD6hkER6kRaHJ87OD+5CNiRHTjpAUHTc4fLvAW4vq0/fcjpTrxir2R7Bv3d4\r\n58yDsnc23iBA/SctgBJvN094YGQ/GlMDvIQ=\r\n=EEIq\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.6.2": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.6.2",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.0",
+            "@supabase/supabase-js": "^1.35.3"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "del-cli": "^4.0.1",
+            "fix-esm-import-path": "^1.2.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-gbmS2O5Pc4tYhGBuAu2chzeZi8hs/L44kswfkJsr33Sqh7L0/ucZGfb6tqA/bShyAnjFVlEOrfXgGEL5+WRSZw==",
+            "shasum": "bcc3c34aeff41194e2d1bb262bd3648dd170bdc8",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.6.2.tgz",
+            "fileCount": 36,
+            "unpackedSize": 39082,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIQD4z+Qvr5ZOy9K1K7vmE7XMtu9mauGZdALNhctVE0kEqgIgRaNejVHnLJM1AAiEAJjzXlJ5YmJKm4DzbA70o1zAHFo="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJisdiaACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrCRhAAmlqv+q2CpSIxRnspc8MWm25lOecVop/q2tRnVVkDTtFMzuFs\r\naTlbZECcHHsR8VSyRS7eSqHrf0aas0DVT1Xva7KgtVdTNVOWw/rKA0akve1t\r\n0S5tIrJaEAE/r3nxgeAbXj1GzgdjUMaybmYhuJXY9GkwQok/rTAXCm4hK6N2\r\nr4ve5CEy9S8LmuL2lVaXbp8dncC3vSKfw/LKm8ojrqXXn/lC+K3rIXkmJe5b\r\nYBz3CBQWYCLfm8LvGtOgJgu90HB9jQVqm+TRI5yxwcEAfJ0XLYDd0hjfAk/Y\r\nFWQRW22bXft5JgiOjBdzkzzZb7SzKhwlXvx3tWczRTnnrBOOGPfLqh+WrwU+\r\nztH26N2MysOcecfmdTOFrNYavDSq27yS95ILsxV/U2E/o9wg0Dkn+rhBaNhP\r\nPEA6kCD9zA6Nq1cvF+yKerLyOohhBZetX/5BS41N4rBExhvU5vDcXa+8NwUD\r\nUAlnzmlrlrJrJo7oFBWD6cfsQAe6B8Tm4/Hf7WUOriwc2VSx7n/jSQxKIRzB\r\nOA4JVQBl1+BvDwbklHTCKalQPeYtvqwmPPl2vWqLjMwwOKyArtcbgjxAEhp/\r\nmpzYyXJcssHuM+9h2grv33Scf+XJqY0OW9ARA4PPMvaThYA58C7BAnDf/YpI\r\n7ZMqD/qC0EGo8tcqyUYz8npbI7Xp+kuhInY=\r\n=7o0d\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.6.3": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.6.3",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.1",
+            "@supabase/supabase-js": "^1.35.3",
+            "loglevel": "^1.8.0"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "del-cli": "^4.0.1",
+            "fix-esm-import-path": "^1.2.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-mbhVsvXJ/ISq16tUgJDHE7OLEfRVcY8ltAwknPhgPElR/Pif19AUrIb+9LfzL9Nhv3CqdeNCvi5B9SLj72gfOg==",
+            "shasum": "cba4d49e7aa3451e33e58360ca2ea5c9d1200a0a",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.6.3.tgz",
+            "fileCount": 36,
+            "unpackedSize": 41576,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIE8pRg8MQOPNs8JCgDEmfiKnlQ/+ashmzXHzIrXCd/vfAiEA0pnAxPGeUWrrKcDhnOrBiMK66XA1QeMMockwCpkDrmM="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiwN/RACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoCZA//awToKk4c6U6YsXZumXs6XCtCo3xSNjFxo5oT9WTP0xJoTW/p\r\nOd08vM45O4MTJ7JisQSnNFwc4ye4M9pK1cZpoIeWX3neUk5Gv4mry3gbBHoT\r\nssCYe1qCuo6dJg4Wdu2obe3s7SiyuIR5Nyco7/digLr316H88w7rGHQeuS8z\r\nmx1qEja9VvtZArnnq87p1aUDsGy3nM1vHJ5n/hd9Q/IVTZ6ojF7bmzfpBTS1\r\nmwMQ0V9cfH71bNx77iMttdwjN9AX3oANk6rnrI86iVXeyby1pV2V5eLt1os4\r\nU5Kcor/iIdPeigygzqJBZcz52VxXVeOg/f1w/zOmaOYzX/jBXP5JaAoJeaNk\r\n+RdeZ/Tfpup7Wh0MHSAiFt2lpRIpXzFgBPazmje5IJGywJ4KuKLoj981A/T+\r\nZNksRyukXG94dKVCxOe3dyWNx3PE+HvG4Hw3wRVZlGMDMQn2H8rDjk9TUYlQ\r\nYNoKL/wW7JLJ3l7DVEEiMVwFhJ6Cbx7j5n1m14h9PNKL4+CPohJ+yONnCGac\r\nUsTA2mk19/+tGt75j8ppXfQzEileMJezsQXCqc2PtRK9Is2Leqn7hm6O3ByZ\r\nw3WX719r7WGZv1SRNbU6Os4qjhlaV0lDkURUoqNIX2nYyzCHWymrRuJ9bFiJ\r\n2sFGF8sRJR7YFeXuTwov6qkfcGcsP23rHYM=\r\n=hoQe\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.6.4": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.6.4",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.2",
+            "@supabase/supabase-js": "^1.35.3",
+            "loglevel": "^1.8.0"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "next",
+            "del-cli": "^4.0.1",
+            "fix-esm-import-path": "^1.2.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2"
+          },
+          "dist": {
+            "integrity": "sha512-tsaHm013vA175gAFcT92bO9I/IU4PWUrS4iWC9c7BqjFt1e4TeWT0K63Tb3gIHOB/Ow/PzexGB17Xo+lzep0Gg==",
+            "shasum": "d79cd63da378710fc6c0e6b33c5e0b4765beec11",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.6.4.tgz",
+            "fileCount": 38,
+            "unpackedSize": 43432,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIG4r5JVU0UdusFpHwlvaDiNQWwkTNpZO8cqSP8wT+ab3AiEAqF2nZAwUqCE8TGXiGeNpNxHX4Qb2jVNL13YMDyIdFN0="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiw527ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmqvww/8CKJ822W6lJTstwe9ZQujKoIPZuKPsYkt++bAGGF70xq4Vqsz\r\njf3wYy8wfcxK0DJQxb41MtlMDlao3B2RYkh/4HMhjaq2eGDv0RVWmfUYP4jq\r\n6qVNQGKeCH6Sd+DOTk03Ni03QE8Nrq15LIl0CSs9swhBOInenmdo0tUp+7ZS\r\npiZlZqckzx2FbiNSpVKwjqgGgPUvQm4x8DnBhNF3sIpraW1oBQ+xiuqT+Zzg\r\nTEytNOh9xXkZ0YjeNAz+gl4wk/4+vtMKnk7JScy5PgfwnBmDKPs/ljEtaqjw\r\nHKBw/G5hQrKMCyT4KvMwuozHxEjU9M8zLOY47Kv3GJvakkaCChUMayK0InNX\r\nHoE+SybSoEDQ0Rj8po3JI2ZBN8gh1UYA+fYoLLeYGTk3SsQIp8lRkkvWWOYN\r\nO+rv9Awvfc4KAnzfiAtZ8xi3xm54DuUSGfXAZm/4xqDiCnrWYfMOrl+M7NGe\r\nrYrsWWd9dO8oZHGLN7rI6LbrVZAf/HL2wLlnFKiAHz7DhTunG9NY4y6UeGtB\r\nYy/Eifn9Ja5nu2M/xCHmIjJmil0sEUXFSlvVfWlbtjFTy6oQKeNt63lQs3yU\r\nbWkRUr3FbGJVfldD+v6qGSQDFRH8OxPwD78x0BTFAPdWhQt3XlBKmmFzStTr\r\nHC5Pdgs416UveCl41WG20r9rN/iXSg1K700=\r\n=++5m\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.6.5": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.6.5",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.2",
+            "@supabase/supabase-js": "^1.35.3"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "1.0.0-next.355",
+            "del-cli": "^4.0.1",
+            "fix-esm-import-path": "^1.2.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2",
+            "vite": "^2.9.13"
+          },
+          "dist": {
+            "integrity": "sha512-m+RNbfCDLrLZIMI/E0VMTLjNJw9Dkh/HrOlY77QvfczX8KsSOxuYz7OqZ3otFtVfwXU8ZMBw9todRXl3QOYthQ==",
+            "shasum": "d2dce5533c1d85dc0a27db56a8fbaa4035d010aa",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.6.5.tgz",
+            "fileCount": 38,
+            "unpackedSize": 44198,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIQDvBq/AUlVEP4DeRqCdjJn0ywjtEUtFdgFvpkiBjtl/jQIgLhds/KyM55LZR9hN9u/b4q4ZJHHCHMAa6wISctSwjnE="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJixg7VACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoaWA/9HGsG9Kpcy5v+DRsp5Hs1ui8ZWM5yi8XPz4sbtewMO+frBxMu\r\nEXZFVcBdHh6VYSH0pMhDgQ5/RtM+2YhHeFTUZHhgLF7U57JsWZRUi4RW7yaR\r\nzNF4aWObS8cKW02roG+vALMTOhM6REPfP2ZQg/UG5TE+uyAO6dNPlGWwRlol\r\nY4TcQdAL8x6wUVqmkzZZidLSkz1PHsS9zRoyjjU8sGlDkJukZ3DkXUuuTaxE\r\n6nnKYrWzrQNlKYq+YZcm9xlQlBOxFeEsQzb2iLpB2j9qPxIXxSWF3EgYyFYm\r\nuHDhakUzQXfaC79xeo8pPXRtDDFMzaLtR1/uEuf5Eu/1qn8y68pMKedYT49a\r\n3cOdo77d4h/kNkDP0yGrukDpRRtieFpozEP2UAXGJms04KwOKRagH6z2dsGU\r\nK+K9qCl4997JFxERY8ocL14PAkiBhGzK+yr4iYvjXdKOpnGEMAbNLhKgasdR\r\n0KfAGNiHPC2AFfcg5bLj2PEdk1VAhT9haBsXWQJs3KsvwyobGquberIUI7Re\r\n3aafyfwocTKHGYACZXd1TCsZEZLSrWyCJF767ZUiRNWu1owenMqy6ULY8d1Y\r\n27rwXbaNdAU6sjs1+BL6wwBTTJKDRXvW3by3IXBDbutrtOwaDlD58vrMP8Zz\r\nd5kXalBJXsa3AiPd0HqqCnNADIc0xG/RGws=\r\n=dl+w\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.6.6": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.6.6",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.3",
+            "@supabase/supabase-js": "^1.35.3"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "1.0.0-next.355",
+            "del-cli": "^4.0.1",
+            "fix-esm-import-path": "^1.2.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2",
+            "vite": "^2.9.13"
+          },
+          "dist": {
+            "integrity": "sha512-sfd6KnQ9kUa+T236ksxYzOkkR4m//qwN4V7MBvJqAF3G//PPGiL5DMgOOub3INtpt2VE1ptiPc/s45jF8e4M9w==",
+            "shasum": "3c43c521dd9ab6c98b085a837939a38822c6f2ec",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.6.6.tgz",
+            "fileCount": 42,
+            "unpackedSize": 50262,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEUCIH98SM2e1+Z6KEA6wyE3i/8VWm1WuSD2IoQHf5P2qtrIAiEAlD6s1YE+xBjNhBG/dPAyi06xb3qjSC1o8X+q0rWMfpA="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJizYKfACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmreoQ/7BGstk1i1ZhtR7ck8RG0XuNucwoLluU3wmXGb9KutxnCwRNhO\r\njEUd70L3csS5WJgqAQio8nUYpirbbd9c2wubBPCwrGK1j2LWNPhCiKvdqKxc\r\nMPv//cAct4d4f2gpf8bIHSBETW1u6Bz8E8RfFHNjH7q3NndWRE4wwIXo8vXL\r\nNUAniBTQ2V/GQ7ggSWx0xoUJbeyBNuQXgRjvHBH21jAbn09GT9mp5/dBIkeV\r\neTdRFbMwf/EIDnDrXeGRScmeFvvQQfai/KRV1DW+s8VqFr3Ac52YX+B+dXUg\r\n9iSKPDgnGO8TC6IdrWkBe8GpTzz+LAZxeROURR5FsPXPUzKyZsLvi9dRrhGd\r\njlweIPIuoEUscXHfecao/eBZSCOUVrY+QPqQGTZSoZERvT3qpLIbl67x9A0D\r\nDVytazmeKuaYflTrftrCAw+jPJtHPgshHOpRbk1pe4QTXsg4P2vXFYrpKeO6\r\nzvuHpiVlQ/BlkRvu2yKOAjQUS9vJl+caVPfCutF+qDNL2bgx9QPOB54uo3C+\r\nOQHF4nN+OXY1wyQhenCjA5ciGQIMSpUQx5Zm6W2fBZq8zNcTWOJe4tis7p9x\r\nbb9gvI7d21FORgKAPr76iOa+PX2h8CxxR/R4MFDRA48FQqd3m6/ml0UyAeMh\r\nUe7bGnhQtBZVKb38ekAY1IYf9O6Z/bvexYw=\r\n=tLNj\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.6.7": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.6.7",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.3",
+            "@supabase/supabase-js": "^1.35.3"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "1.0.0-next.355",
+            "del-cli": "^4.0.1",
+            "fix-esm-import-path": "^1.2.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2",
+            "vite": "^2.9.13"
+          },
+          "dist": {
+            "integrity": "sha512-ZvOm7WPAyE9UDm/iyyxWRRzuc+S0IHASYL5FBs3ldgM3FRQtJIccAqP7nMHKoHokqKgsyApijVIBPY3bbpyb4g==",
+            "shasum": "ab5cc7e988f6ab6f04af6ddeef6085e053dc06e6",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.6.7.tgz",
+            "fileCount": 42,
+            "unpackedSize": 51022,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEQCIG2I4S24ALvNjf77OmxLm5NBhekOlAKso5QsoikplcnXAiBHUJSekmi8w3AaPcTvPvwWOZPSBg2odmdyMnXN6LY7yg=="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJizZvhACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpIjA//SWWiBWR91+1T0jhlm/O7tlr2JgYG9OAiVBqxNs4/TuwP19UB\r\nup2XaoFBqeWPjc+E2LPhFQyyRRhDvwojoYvtm+UhTxelYDltbY4zK3sUtIEE\r\npssqI3fu5p/lsTHs0fYSkTfpgZlzkMO93lmyibTWsHWrBynVctUGMDTuGIjD\r\nyzsfOwlRA0tIV10jIdbVeQxOeAcG0yXTT7CmO41GBfKKts1CSVyHvWxX/z5V\r\n3qmSJXm51qG01A0obIx3HIs2Trmi+weAW4IRXps7iLlNAqEiFE7vcM4Ig6JC\r\ngE/kJxqKShckdO60CZ+cKi16tnVQtryHf7J7C+G+MkDGOBIc1YT8xe8CH8TY\r\naKHrpAMxh7PtRoRYGzGqQwumtkKXu35Fb7hYK9W97EFilKT2o6fduUp9uiLA\r\nu2VmOWoYbZVpzadsNP9RqHL62OSYHJKElh3e/AIXciyVKxv1Z2CSbqMBBm7r\r\nMdd4+N5HlGkHaSCwK3ISFs+a7MLC00ajNn4Iv2tPK/oDYtqrhrC5G6042HrX\r\n+WDdsotA9N5hhoqTclsOPFijSFVygJ3ruhmCTW+52oeu+MXgFBxzeUL9/LaC\r\ntMxxwjm2pzbMSKda6u5yMtCuvFWcO0aUDRxcXxszo2OviPeb8gTwE45lGawy\r\n9aJVnyNWV1o6SrmEQeBNCbDtENti7ooEEC4=\r\n=SNGK\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        },
+        "0.6.8": {
+          "name": "@supabase/auth-helpers-sveltekit",
+          "version": "0.6.8",
+          "dependencies": {
+            "@supabase/auth-helpers-shared": "0.1.3",
+            "@supabase/supabase-js": "^1.35.3"
+          },
+          "devDependencies": {
+            "@sveltejs/kit": "1.0.0-next.355",
+            "del-cli": "^4.0.1",
+            "fix-esm-import-path": "^1.2.1",
+            "svelte": "^3.48.0",
+            "svelte2tsx": "^0.5.10",
+            "tslib": "^2.3.1",
+            "typescript": "^4.7.2",
+            "vite": "^2.9.13"
+          },
+          "dist": {
+            "integrity": "sha512-6ZzHJymHHiWvi4LhskFCdFR+yBsOkInPYftszQIPyqSzuVlgpODfQsAvusZpqgZbQEubX+B0W1zqn42aMDKPHw==",
+            "shasum": "93c6318f50ad88b8380986031ac86e55299ae702",
+            "tarball": "https://registry.npmjs.org/@supabase/auth-helpers-sveltekit/-/auth-helpers-sveltekit-0.6.8.tgz",
+            "fileCount": 42,
+            "unpackedSize": 50850,
+            "signatures": [
+              {
+                "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+                "sig": "MEQCIHa3cILNp7P9CeqcphE7vOdQP5+DLYyAvz4a8mr04YesAiBEa16BSu76aajg7rqviOVU6PoDC5zSp6aXkUIzymy0Qg=="
+              }
+            ],
+            "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi0jz8ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrpIA//Wa9thwHLBCNrDvwGMNl2hBFkcK+fdAuxdBERa4Y8WedtOWUP\r\nD9mHL+u+6qT5kEOeNu5SwzHQu/lJ1hqGU8j3SBDsRosKuoVdHDd9gII3mXGL\r\nhx3RlyRsLCiLXhcDwcL4K+pFgUbbwrFDZURdYBgbl+D4CRGgflKefh0hTXPY\r\nSM0hyeEKxvYsrdnNFKnf8xyU2xhJXodYlG+/HVXiXfq7eZSYe3vNns2w41k5\r\nlJpnEchntRRT+DBtypYdyOwf2ZR+GZC3MeDb0gn6af6BgyGBHXvmHz+3BuPA\r\nXd4yD/Fr3iUg0yyD7YU+zfQ5mCUgdqtyBQNNoC+a5uBwL9uKHnDa6aLWcusb\r\n/U6I3MCSZljXprDatrWFijZ7uzs0gw/hfeMGd/lZwkS6Ab2A+qNLWIgcbdfz\r\nB8REXzjURASIHQjLxzmRdVxY7hsc/0FXRE6ym0GL9tv4zWyuLTLXVCGthXNU\r\nky9G7tmoFNZfzcKMcHHsJHxxuB5NM2Art6kmp2lCgC9136sTss6sCAD75DIF\r\nUXO9atIYyAkisHtydaubc/Mh8Y2bYJLA5GLnrwPKXI8aejpx0+vFigax9FtG\r\nfWmeQIIImnoKE9xtP3yTegIAv5+j0FQ5QHv3PGAQ2eUHbsIS+2d5ltJsbPvG\r\n8TjQJjf1hJDCOxemR3th5vYZAUre/N8/l6M=\r\n=H7Tg\r\n-----END PGP SIGNATURE-----\r\n"
+          }
+        }
+      },
+      "modified": "2022-07-16T04:22:21.099Z",
+      "cachedAt": 1659310301931
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "No matching version found for @supabase/auth-helpers-sveltekit@next",
+      "code": "ERR_PNPM_NO_MATCHING_VERSION",
+      "stack": "pnpm: No matching version found for @supabase/auth-helpers-sveltekit@next\n    at resolveNpm (/home/jm61/.local/share/pnpm/global/5/.pnpm/pnpm@7.5.0/node_modules/pnpm/dist/pnpm.cjs:85849:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Object.resolve (/home/jm61/.local/share/pnpm/global/5/.pnpm/pnpm@7.5.0/node_modules/pnpm/dist/pnpm.cjs:86031:28)\n    at async run (/home/jm61/.local/share/pnpm/global/5/.pnpm/pnpm@7.5.0/node_modules/pnpm/dist/pnpm.cjs:92979:23)"
+    }
+  }
+}
